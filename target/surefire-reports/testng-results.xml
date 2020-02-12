@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="189962" started-at="2020-02-12T14:05:19 ART" finished-at="2020-02-12T14:08:29 ART">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="189962" started-at="2020-02-12T14:05:19 ART" finished-at="2020-02-12T14:08:29 ART">
+      <class name="EjercicioFinal.TestFinal">
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="22677" started-at="2020-02-12T14:05:19 ART" finished-at="2020-02-12T14:05:42 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="clickDress()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="clickDress" duration-ms="10506" started-at="2020-02-12T14:05:42 ART" description="Ejercicio 2.1 &gt; DRESSES" finished-at="2020-02-12T14:05:52 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickDress -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="733" started-at="2020-02-12T14:05:52 ART" finished-at="2020-02-12T14:05:53 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="19108" started-at="2020-02-12T14:05:53 ART" finished-at="2020-02-12T14:06:12 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="clickWomen()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="clickWomen" duration-ms="10089" started-at="2020-02-12T14:06:12 ART" description="Ejercicio 2.2 &gt; WOMEN" finished-at="2020-02-12T14:06:22 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickWomen -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="772" started-at="2020-02-12T14:06:22 ART" finished-at="2020-02-12T14:06:23 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="19180" started-at="2020-02-12T14:06:23 ART" finished-at="2020-02-12T14:06:42 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="loginIncorrecto()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="loginIncorrecto" duration-ms="6301" started-at="2020-02-12T14:06:42 ART" description="Ejercicio 4-Autentificación Erronea" finished-at="2020-02-12T14:06:48 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIncorrecto -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="729" started-at="2020-02-12T14:06:48 ART" finished-at="2020-02-12T14:06:49 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="18599" started-at="2020-02-12T14:06:49 ART" finished-at="2020-02-12T14:07:08 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="searchExis()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="searchExis" duration-ms="7009" started-at="2020-02-12T14:07:08 ART" description="Ejercicio 1.1 - Exis, con PO" finished-at="2020-02-12T14:07:15 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchExis -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="756" started-at="2020-02-12T14:07:15 ART" finished-at="2020-02-12T14:07:15 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="20581" started-at="2020-02-12T14:07:15 ART" finished-at="2020-02-12T14:07:36 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="searchInex()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="searchInex" duration-ms="7875" started-at="2020-02-12T14:07:36 ART" description="Ejercicio 1.2 - Inex, con PO" finished-at="2020-02-12T14:07:44 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInex -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="749" started-at="2020-02-12T14:07:44 ART" finished-at="2020-02-12T14:07:45 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+        <test-method status="PASS" signature="inicio()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="inicio" is-config="true" duration-ms="19150" started-at="2020-02-12T14:07:45 ART" finished-at="2020-02-12T14:08:04 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicio -->
+        <test-method status="PASS" signature="selectTShirt()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="selectTShirt" duration-ms="24391" started-at="2020-02-12T14:08:04 ART" description="Ejercicio 3 &gt; Dropdowns" finished-at="2020-02-12T14:08:28 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTShirt -->
+        <test-method status="PASS" signature="fin()[pri:0, instance:EjercicioFinal.TestFinal@3ffc5af1]" name="fin" is-config="true" duration-ms="691" started-at="2020-02-12T14:08:28 ART" finished-at="2020-02-12T14:08:29 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fin -->
+      </class> <!-- EjercicioFinal.TestFinal -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
