@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="EjercicioFinal.TestFinal" hash-for-method="clickWomen">clickWomen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="EjercicioFinal.TestFinal" hash-for-method="clickDress">clickDress</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="EjercicioFinal.TestFinal" hash-for-method="clickWomen">clickWomen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,6 +151,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">EjercicioFinal.TestFinal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickWomen">
+                  </a> <!-- clickWomen -->
+                  <span class="method-name">clickWomen</span>
+                  <div class="stack-trace">java.lang.AssertionError: &gt;&gt; SECCION INCORRECTA &lt;&lt; expected [TOPS ] but found [WOMEN ]
+	at EjercicioFinal.TestFinal.clickWomen(TestFinal.java:73)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Ejercicio 2.2 > WOMEN)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -159,20 +190,11 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickWomen">
-                  </a> <!-- clickWomen -->
-                  <span class="method-name">clickWomen</span>
-                  <em>
-(Ejercicio 2.2 > WOMEN)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginIncorrecto">
                   </a> <!-- loginIncorrecto -->
                   <span class="method-name">loginIncorrecto</span>
                   <em>
-(Ejercicio 4-Autentificación Erronea)                  </em>
+(Ejercicio 4 > Autentificación Erronea)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -181,7 +203,7 @@
                   </a> <!-- searchExis -->
                   <span class="method-name">searchExis</span>
                   <em>
-(Ejercicio 1.1 - Exis, con PO)                  </em>
+(Ejercicio 1.1 > Exis)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -190,7 +212,7 @@
                   </a> <!-- searchInex -->
                   <span class="method-name">searchInex</span>
                   <em>
-(Ejercicio 1.2 - Inex, con PO)                  </em>
+(Ejercicio 1.2 > Inex)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -259,27 +281,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'selectTShirt')
 data.setCell(0, 2, 'EjercicioFinal.TestFinal')
-data.setCell(0, 3, 24391);
+data.setCell(0, 3, 25233);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickDress')
+data.setCell(1, 1, 'clickWomen')
 data.setCell(1, 2, 'EjercicioFinal.TestFinal')
-data.setCell(1, 3, 10506);
+data.setCell(1, 3, 17264);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickWomen')
+data.setCell(2, 1, 'clickDress')
 data.setCell(2, 2, 'EjercicioFinal.TestFinal')
-data.setCell(2, 3, 10089);
+data.setCell(2, 3, 10926);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchInex')
+data.setCell(3, 1, 'searchExis')
 data.setCell(3, 2, 'EjercicioFinal.TestFinal')
-data.setCell(3, 3, 7875);
+data.setCell(3, 3, 7912);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchExis')
+data.setCell(4, 1, 'searchInex')
 data.setCell(4, 2, 'EjercicioFinal.TestFinal')
-data.setCell(4, 3, 7009);
+data.setCell(4, 3, 7244);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginIncorrecto')
 data.setCell(5, 2, 'EjercicioFinal.TestFinal')
-data.setCell(5, 3, 6301);
+data.setCell(5, 3, 6632);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -317,71 +339,73 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickDress</span>
-                <span class="method-start">22679 ms</span>
+                <span class="method-start">23077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">33190 ms</span>
+                <span class="method-start">34006 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inicio</span>
-                <span class="method-start">33926 ms</span>
+                <span class="method-start">34909 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">clickWomen</span>
-                <span class="method-start">53034 ms</span>
+                <span class="method-start">54899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">63123 ms</span>
+                <span class="method-start">72182 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inicio</span>
-                <span class="method-start">63897 ms</span>
+                <span class="method-start">72859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginIncorrecto</span>
-                <span class="method-start">83077 ms</span>
+                <span class="method-start">92733 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">89378 ms</span>
+                <span class="method-start">99365 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inicio</span>
-                <span class="method-start">90108 ms</span>
+                <span class="method-start">100056 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchExis</span>
-                <span class="method-start">108707 ms</span>
+                <span class="method-start">121161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">115716 ms</span>
+                <span class="method-start">129073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inicio</span>
-                <span class="method-start">116474 ms</span>
+                <span class="method-start">129834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchInex</span>
-                <span class="method-start">137055 ms</span>
+                <span class="method-start">150758 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">144931 ms</span>
+                <span class="method-start">158004 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inicio</span>
-                <span class="method-start">145682 ms</span>
+                <span class="method-start">158718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectTShirt</span>
-                <span class="method-start">164832 ms</span>
+                <span class="method-start">180751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">fin</span>
-                <span class="method-start">189223 ms</span>
+                <span class="method-start">205984 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

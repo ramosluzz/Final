@@ -5,7 +5,7 @@
     <classes>
       <class name="EjercicioFinal.TestFinal">
         <methods>
-          <include name="Search"/>
+          <include name="clickWomen"/>
           <include name="fin"/>
           <include name="inicio"/>
         </methods>
